@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Personal website of Dr. Alex Y. Song (a.k.a. Yu Song).">
+    <meta name="author" content="Dr. Alex Y. Song, 2016">
+
+    <title>Alex Y. Song, Ph.D.</title>
+
+    <!-- Bootstrap latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>	 -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+
+    <!-- Bootstrap latest compiled and minified JavaScript. Must put after jQuery script -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- jQuery UI -->
+    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- Mathjax -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">  </script>
+    <!-- <script type="text/javascript" async src="MathJax/MathJax.js?config=TeX-MML-AM_CHTML">  </script> -->
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+    <div id="banner" class="container-fluid" >
+        <!-- <img src="img/SU_Seal_Red_hollow.svg"> -->
+        <h1><a href="http://web.stanford.edu/~alexys" style="color:#000;text-decoration:none;text-shadow: 0em 0em 0.3em #fff">Alex Y. Song, Ph.D.</a></h1>
+        <h3>Postdoctoral Fellow, Stanford University</h3>
+        <p> E. L. Ginzton Lab  & Department of Electrical Engineering </p>
+        <p style="font-style: italic; color: blue"> alexys a.t. stanford.edu</p>
+    </div>
+
+    <nav class="navbar navbar-default" id="theNavbar"> <!-- data-spy="affix" data-offset-top="150" --> <!-- navbar-fixed-top -->
+        <!-- <div class="container-fluid" id="theNavbarContainerFluid"> -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Alex Y. Song, Ph.D.</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" id="myNavbar-nav"> <!-- navbar-right" -->
+                    <li class="navbar-nav-spacer"></li>
+                    <li class="true-nav-li"><a id="navbar-nav-bio" href="#tab-bio">Bio</a></li>
+                    <li class="navbar-nav-spacer"></li>
+                    <li  class="true-nav-li"><a id="navbar-nav-publications"href="#tab-publications">Publications</a></li>
+                    <li  class="true-nav-li">
+                        <!-- <div class="dropdown"> -->
+                            <a id="navbar-nav-publications-caret" class="dropdown-toggle" data-target="#dropdown-menu"  data-toggle="dropdown" href="#" style="margin-left: 0em; padding-left:0.5em"> <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a id="navbar-nav-journal" href="#tab-publications-journals" >Journal</a></li>
+                                <li><a id="navbar-nav-conference" href="#tab-publications-conferences">Conference</a></li>
+                            </ul>
+                        <!-- </div> -->
+                    </li>
+                    <li class="navbar-nav-spacer"></li>
+                    <li  class="true-nav-li"><a id="navbar-nav-education" href="#tab-education">Education</a></li>
+                    <li class="navbar-nav-spacer"></li>
+                    <li  class="true-nav-li"><a id="navbar-nav-services" href="#tab-services">Services</a></li>
+                    <li class="navbar-nav-spacer"></li>
+                    <li class="true-nav-li"><a id="navbar-nav-links" href="#tab-links">Links</a></li>
+                    <li class="navbar-nav-spacer"></li>
+                    <!-- <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li> -->
+                </ul>
+            </div>
+        <!-- </div> -->
+    </nav>
+
+    <!-- need a content wrapper, 为了让navbar+tab content至少 fill up 一个屏幕。 这样切换tab 的时候就不会被迫 scroll up page, 至少让navbar处于affix的状态。 -->
+    <div class="content-wrapper">
+
+        <div id="pageTopPadding">
+        </div>
+
+        <div class="contentTabs" id="tab-bio">
+            <div class="container-fluid">
+
+                <div id="bio-bio">
+                    <h2 style="text-align:center">About Me</h2>
+                    <div class="separationLine">
+                        <div class="separationLine-LeftLine"> </div>
+                        <img src="img/symbol3.png">
+                        <div class="separationLine-RightLine"> </div>
+                    </div>
+                    <p>
+                        &nbsp &nbsp
+                        Hi, welcome to Alex Song's site. 
+                        I recently joined the University of Sydney as a senior lecturer. 
+                        Previously, I was a postdoctoral fellow in <a href="http://web.stanford.edu/group/fan/">Prof. Shanhui Fan's group</a> at Stanford University.
+                        I am interested in nanophotonics, topological materials, quantum photonics, non-Hermitian physics, and thermal photonics. 
+                        I engage in both thoretical and experimental studies.
+                        My research finds applications in integrated devices, sustainable energy, and information processing. 
+
+                        <!-- My main research interest is in photonics, where I engage in both theorerical and experimental studies of novel photonic effects that are applicable in integrated devices, sustainable energy, information processing, etc.
+                        Some recent topics include topogocial photonics, non-Hermitian physics, quantum states of light, and thermal photonics. -->
+                        <!-- Please check my <a href="#tab-publications">publications</a> page for recent updates. -->
+                    </p>
+                    <p>
+                        &nbsp &nbsp
+                        My thesis work in <a href="http://qcllab.princeton.edu/">Prof. Claire Gmachl's group</a> at Princeton University focuses on intersubband physics and devices.
+                        The experimental part of the work explores novel quantum cascade light sources and photodetectors, especially in the III-nitride material system.
+                        The theoretical part focuses on the transport and optical properties of intersubband quantum structures, using techniques such as the non-equilibrium Green's functions.
+                        I have worked on mid-IR solid-state lasers and metamaterials as well.
+
+                        <!-- My experimental work focused on novel quantum cascade light sources and photodetectors, especially in III-nitride material system. On the theoretical side, I have studied intersubband quantum structures using non-equilibrium Green's functions and other theoretical techniques.
+                        My theoretical work focused on the theory of intersubband transitions using non-equilibrium Green's functions.
+                        I also studied intersubband quantum structures theoretically using non-equilibrium Green's functions.
+                        concentrate
+                        mainly concerns with
+                        studies the transport and optical properties of intersubband quantum structures using the non-equilibrium Green's functions formalism. -->
+                    </p>
+
+                    <p>
+                        &nbsp &nbsp
+                        I am looking for Ph.D. students. If you are interested, please feel free to contact me at alex.song (at) sydney.edu.au.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentTabs" id="tab-publications">
+            <div class="container-fluid">
+
+                <h3 class="tab-publications-title" id="tab-publications-journals">Journal Publications</h3>
+
+                <div class="separationLine">
+                    <div class="separationLine-LeftLine"> </div>
+                    <img src="img/symbol1.png">
+                    <div class="separationLine-RightLine"> </div>
+                </div>
+
+                <!-- 打开cv，把publication拷贝到npp，然后搜索\r\n，换成</li>\r\n<li>，搜索名字、paper title前后的分号，替换上span之类。 -->
+                <ol class="list_Publications">
+
+                    <li>
+                        <span class="myName">Alex Y. Song</span>,  Akhil Raj Kumar Kalapala, Ricky Gibson, Kevin JamesReilly, Thomas Rotter, Sadhvikas Addamane, Haiwen Wang, Cheng Guo,Ganesh Balakrishnan, Robert Bedford, Weidong Zhou, and Shanhui Fan,
+                        <span class="publicationTitle">"Controllable finite ultra-narrow quality-factor peak in a perturbed Dirac-cone bandstructure of a photonic crystal slab"</span>, 
+                        <a  style="color:inherit" href="https://doi.org/10.1063/5.0056243">
+                            <span class="journalName">Appl. Phys. Lett.</span> 
+                            <span class="vol">119</span>, 
+                            031105 (2021) 
+                            (Editor's Pick)
+                        </a>
+                        <a style="color:inherit" href="publications/2021_APL_single_freq_single_color_5.0056243.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+                
+                    <li>
+                        <span class="myName">Alex Y. Song</span>,  Xiao-Qi Sun, Avik Dutt, Momchil Minkov, Casey Wojcik, Haiwen Wang, Ian Williamson, Meir Orenstein, and Shanhui Fan,  
+                        <span class="publicationTitle">"\(\mathcal{PT}\)-symmetric topological edge-gain effect"</span>, 
+                        <a  style="color:inherit" href="https://doi.org/10.1103/PhysRevLett.125.033603">
+                            <span class="journalName">Phys. Rev. Lett.</span> 
+                            <span class="vol">125</span>, 
+                            033603 (2020)
+                        </a>
+                        <a style="color:inherit" href="publications/PhysRevLett.125.033603.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        Ian AD Williamson, Momchil Minkov, Avik Dutt, Jiahui Wang, <span class="myName">Alex Y. Song</span>, Shanhui Fan, 
+                        <span class="publicationTitle">"Integrated Nonreciprocal Photonic Devices With Dynamic Modulation"</span>, 
+                        <a  style="color:inherit" href="https://doi.org/10.1109/JPROC.2020.3023959">
+                            <span class="journalName"> Proceedings of the IEEE</span> 
+                            <span class="vol">108</span>, 
+                            1759 (2020)
+                        </a>
+                        <a style="color:inherit" href="publications/IEEEProc09207994.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        Momchil Minkov, Ian AD Williamson, Lucio C Andreani, Dario Gerace, Beicheng Lou, <span class="myName">Alex Y. Song</span>, Tyler W Hughes, Shanhui Fan,  
+                        <span class="publicationTitle">"Inverse design of photonic crystals through automatic differentiation"</span>,
+                        <a  style="color:inherit" href="https://doi.org/10.1021/acsphotonics.0c00327">
+                            <span class="journalName">ACS Photonics</span> 
+                            <span class="vol">7</span>,
+                            1729 (2020)
+                        </a>
+                        <a style="color:inherit" href="publications/acsphotonics.0c00327.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        Siddharth Buddhiraju, <span class="myName">Alex Song</span>, Georgia T Papadakis, Shanhui Fan,
+                        <span class="publicationTitle">"Nonreciprocal metamaterial obeying time-reversal symmetry"</span>, 
+                        <a  style="color:inherit" href="https://doi.org/10.1103/PhysRevLett.124.257403">
+                            <span class="journalName">Phys. Rev. Lett.</span> 
+                            <span class="vol">124</span>, 
+                            257403 (2020)
+                        </a>
+                        <a style="color:inherit" href="publications/PhysRevLett.124.257403.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>    
+
+                    <li>
+                        Siddharth Buddhiraju, Yu Shi, <span class="myName">Alex Song</span>, Casey Wojcik, Momchil Minkov, Ian AD Williamson, Avik Dutt, Shanhui Fan,
+                        <span class="publicationTitle">"Absence of unidirectionally propagating surface plasmon-polaritons in nonreciprocal plasmonics"</span>, 
+                        <a  style="color:inherit" href="https://doi.org/10.1038/s41467-020-14504-9">
+                            <span class="journalName">Nature Communications</span> 
+                            <span class="vol">11</span>, 
+                            674 (2020)
+                        </a>
+                        <a style="color:inherit" href="publications/2020_NatComm_s41467-020-14504-9.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>    
+                    
+                    <li>
+                        <span class="myName">Alex Y. Song</span>,  Yu Shi, Qian Lin, and Shanhui Fan, 
+                        <span class="publicationTitle">"Direction-Dependent Parity-Time Phase Transition and Non-Reciprocal Directional Amplification with Dynamic Gain-Loss Modulation"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1103/PhysRevA.99.013824">
+                            <span class="journalName">Phys. Rev. A</span> 
+                            <span class="vol">99</span>, 
+                            013824 (2019)
+                        </a>
+                        <a style="color:inherit" href="publications/PhysRevA.99.013824.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        <span class="myName">Alex Y. Song</span>,  Akhil Raj Kumar Kalapala, Weidong Zhou, and Shanhui Fan, <span class="publicationTitle">"First-principles simulation of photonic crystal surface-emitting lasers using rigorous coupled wave analysis"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1063/1.5045486">
+                            <span class="journalName">Appl. Phys. Lett.</span> 
+                            <span class="vol">113</span>, 
+                            041106 (2018) 
+                        </a>
+                        <a style="color:inherit" href="publications/2018_APL_1.5045486.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        Lili Cai<sup>&dagger;</sup>, <span class="myName">Alex Y. Song</span><sup>&dagger;</sup>,  Wei Li, Po-Chun Hsu, Dingchang Lin, Peter B. Catrysse, Yayuan Liu, Yucan Peng, Jun Chen, Hongxia Wang, Jinwei Xu, Ankun Yang, Shanhui Fan, and Yi Cui 
+                        <span class="publicationTitle">"Spectrally Selective Nanocomposite Textile for Outdoor
+                            Personal Cooling"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1002/adma.201802152">
+                            <span class="journalName">Adv. Mater.</span> 
+                            <span class="vol">30</span>, 
+                            1802152 (2018) 
+                        </a>
+                        <a style="color:inherit" href="publications/2018_Advanced_Materials.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        <span class="myName">Alex Y. Song</span>, Peter B. Catrysse, and Shanhui Fan, <span class="publicationTitle">"Broadband Control of Topological Nodes in Electromagnetic Fields"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1103/PhysRevLett.120.193903">
+                            <span class="journalName">Phys. Rev. Lett.</span> 
+                            <span class="vol">120</span>, 
+                            193903 (2018) 
+                        </a>
+                        <a style="color:inherit" href="publications/2018_PhysRevLett.120.193903.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        Yucan Peng<sup>&dagger;</sup>, Jun Chen<sup>&dagger;</sup>, <span class="myName">Alex Y. Song</span><sup>&dagger;</sup>, Peter B. Catrysse<sup>&dagger;</sup>, Po-Chun Hsu, Lili Cai, Bofei Liu, Yangying Zhu, Guangmin Zhou, David S. Wu, Hye Ryoung Lee, Shanhui Fan & Yi Cui, 
+                        <span class="publicationTitle">"Nanoporous polyethylene microfibres for large-scale radiative cooling fabric"</span >, 
+                        <a style="color:inherit" href="https://doi.org/10.1038/s41893-018-0023-2">
+                            <span class="journalName">Nature Sustainability</span> 
+                            <span class="vol">1</span>, 
+                            105-112 (2018)  
+                        </a>
+                        <a style="color:inherit" href="publications/2018_Nature Sustainability_Cui_AR_1519752128_1.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        Po-Chun Hsu, Chong Liu, <span class="myName">Alex Y. Song</span>, Ze Zhang, Yucan Peng, Jin Xie, Kai Liu, Chun-Lan Wu, Peter B. Catrysse, Lili Cai, Shang Zhai, Arun Majumdar, Shanhui Fan, Yi Cui,
+                        <span class="publicationTitle">"Dual-mode textile for human body radiative heating and cooling"</span >, 
+                        <a style="color:inherit" href="https://doi.org/10.1126/sciadv.1700895">
+                            <span class="journalName">Science Advances</span> 
+                            <span class="vol">3</span>, 
+                            11 (2017)  
+                        </a>
+                        <a style="color:inherit" href="publications/2017_ScienceAdvances_e1700895.full.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        Lili Cai, <span class="myName">Alex Y. Song</span>, Peilin Wu, Po-Chun Hsu, Yucan Peng, Jun Chen, Chong Liu, Peter Catrysse, Yayuan Liu, Ankun Yang, Chenxing Zhou, Chenyu Zhou, Shanhui Fan, and Yi Cui, 
+                        <span class="publicationTitle">"Warming up Human Body by Nanoporous Metallized Polyethylene Textile"</span >, 
+                        <a style="color:inherit" href="https://doi.org/10.1038/s41467-017-00614-4">
+                            <span class="journalName">Nature Communications</span> 
+                            <span class="vol">8</span>, 
+                            496 (2017) 
+                        </a>
+                        <a style="color:inherit" href="publications/2017_Nat.Comm.8.496.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <span class="myName">Alex Y. Song</span>, Rajaram Bhat, Pierre Bouzi, Chung-En Zah and Claire Gmachl, 
+                        <span class="publicationTitle">"Three Dimensional Interface Roughness in Thin Layered Semiconductor Structures and Its Effects on Intersubband Transitions"</span >, 
+                        <a style="color:inherit" href="https://doi.org/10.1103/PhysRevB.94.165307">
+                            <span class="journalName">Phys. Rev. B</span> 
+                            <span class='vol'>94</span>, 
+                            165307 (2016) 
+                        </a>
+                        <a style="color:inherit" href="publications/PhysRevB2016.94.165307.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        Po-Chun Hsu, <span class="myName">Alex Y. Song</span>, Peter B. Catrysse, Chong Liu, Yucan Peng, Jin Xie, Shanhui Fan, and Yi Cui, <span class="publicationTitle">"Radiative Human Body Cooling by Nanoporous Polyethylene Textile"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1126/science.aaf5471">
+                            <span class="journalName">Science</span> 
+                            <span class="vol">353</span>, 
+                            1019 (2016)
+                        </a>
+                        <a style="color:inherit" href="publications/Science2016_1019.full.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        Peter B. Catrysse, <span class="myName">Alex Y. Song</span>, and Shanhui Fan, 
+                        <span class="publicationTitle">"Photonic Structure Textile Design for Localized Thermal Cooling Based on a Fiber Replacement/Blending Scheme"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1021/acsphotonics.6b00644">
+                            <span class="journalName">ACS Photonics</span> 
+                            <span class="vol">3</span>, 
+                            2420-2426 (2016)
+                        </a>
+                        <a style="color:inherit" href="publications/acsphotonics2016.E6b00644.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <!-- <li>
+                        <span class="myName">Alex Y. Song</span>, Rajaram Bhat, Andrew Allerman, Jie Wang, Chung-En Zah, and Claire Gmachl, 
+                        <span class="publicationTitle">"High Temperature Spontaneous Emission in III-nitride Quantum Cascade Structures"</span>, 
+                        in preparation.
+                    </li> -->
+
+                    <li>
+                        <span class="myName">Alex Y. Song</span>, Rajaram Bhat, Andrew Allerman, Jie Wang, Tzu-Yung Huang, Chung-En Zah, and Claire Gmachl, 
+                        <span class="publicationTitle">"Quantum Cascade Emission in III-Nitride Materials Designed with Effective Interface Grading"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1063/1.4932068">
+                            <span class="journalName">Appl. Phys. Lett.</span> 
+                            <span class="vol">107</span>, 
+                            132104 (2015)
+                        </a>
+                        <a style="color:inherit" href="publications/APL2015_1.4932068.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        Omri Wolf, Andrew A. Allerman, Xuedan Ma, Joel Wendt, <span class="myName">Alex Y. Song</span>, Eric A. Shaner and Igal Brener, 
+                        <span class="publicationTitle">"Enhanced Intersubband second harmonic generation from III-Nitride Heterostructures Coupled to Metamaterials"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1063/1.4933332">
+                            <span class="journalName">Appl. Phys. Lett.</span> 
+                            <span class="vol">107</span>, 
+                            151108 (2015)
+                        </a>
+                        <a style="color:inherit" href="publications/APL2015_1.4933332.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        <span class="myName">Yu Song</span>, Rajaram Bhat, Tzu-Yung Huang, Pranav Badami, Chung-En Zah and Claire Gmachl, 
+                        <span class="publicationTitle">"III-Nitride Quantum Cascade Detector Grown by Metal Organic Chemical Vapor Deposition"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1063/1.4901220">
+                            <span class="journalName">Appl. Phys. Lett.</span> 
+                            <span class="vol">105</span>,
+                            182104 (2014)
+                        </a>
+                        <a style="color:inherit" href="publications/APL2014_1.4901220.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        <span class="myName">Yu Song</span>, Jens Sonntag, Sergey B. Mirov, Claire Gmachl and Jacob Khurgin, 
+                        <span class="publicationTitle">"Mid-infrared light emission from a Fe\(^{2+}\):ZnSe polycrystal using quantum cascade laser pumping"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1063/1.4897546">
+                            <span class="journalName">Appl. Phys. Lett.</span> 
+                            <span class="vol">105</span>,
+                            141108 (2014)
+                        </a>
+                        <a style="color:inherit" href="publications/APL2014_1.4897546.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <!-- <li>Chao Wang, Qi Zhang, <span class="myName">Alex Y. Song</span>, Liangcheng Zhou and Stephen Y. Chou, <span class="publicationTitle">"Surface Plasmonic Resonance Detection of Small Molecules Enhanced by Mid-Infrared Plasmonic Nano-Bar Cavity Antenna Arrays"</span>, in preparation.</li> -->
+
+                    <li>
+                        Pierre M. Bouzi, YenTing Chiu, Christoph Deutsch, Yamac Dikmelik, <span class="myName">Yu Song</span>, Vadim Tokranov, Serge Oktyabrsky, and Claire F. Gmachl, 
+                        <span class="publicationTitle">"Importance of Growth Direction in Mid-Infrared Quantum Cascade Lasers"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1063/1.4890311">
+                            <span class="journalName">J. Appl. Phys. </span> 
+                            <span class="vol">116</span>, 
+                            034504 (2014)
+                        </a>
+                        <a style="color:inherit" href="publications/APL2014_1.4890311.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        Chao Wang, Qi Zhang, <span class="myName">Yu Song</span> and Stephen Y. Chou, 
+                        <span class="publicationTitle">"Plasmonic Bar-Coupled Dots-on-Pillar Cavity Antenna with Dual Resonances for Infrared Absorption and Sensing: Performance and Nanoimprint Fabrication"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1021/nn406281u">
+                            <span class="journalName">ACS Nano</span>  
+                            <span class="vol">8</span>
+                            (3), 2618-2624 (2014)
+                        </a>
+                        <a style="color:inherit" href="publications/ACSNano2014_nn406281u.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        <span class="myName">Yu Song</span>, Dong Chen, Lai Wang, Hongtao Li, Guangyi Xi, and Yang Jiang, 
+                        <span class="publicationTitle">"Splitting of Valance Subbands in Wurtzite c-Plane InGaN/GaN Quantum Well Structure"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1063/1.3007985">
+                            <span class="journalName">Appl. Phys. Lett.</span> 
+                            <span class="vol">93</span>, 
+                            161910 (2008)
+                        </a>
+                        <a style="color:inherit" href="publications/APL2008_1.3007985.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        Jin Huang, Changzheng Sun, <span class="myName">Yu Song</span>, Bing Xiong, Yi Luo, 
+                        <span class="publicationTitle">"Phase Noise of Optically Generated Microwave using Sideband Injection Locking"</span>, 
+                        <a style="color:inherit" href="https://doi.org/10.1088/0256-307X/25/11/039">
+                            <span class="journalName">Chinese Phys. Lett.</span> 
+                            <span class="vol">25</span>, 
+                            3980 (2008)
+                        </a>
+                        <a style="color:inherit" href="publications/CPL2008_Huang_Jin_2008_Chinese_Phys._Lett._25_039.pdf">
+                            <img src="img/book_AYS-02.png">
+                        </a>
+                    </li>
+
+                </ol>
+
+                <div class="footnote"> <sup>&dagger;</sup> These authors contributed equally.</div>
+
+                <div style="height:7em;"></div>
+
+                <h3 class="tab-publications-title" id="tab-publications-conferences">Conference Presentations</h3>
+
+                <div class="separationLine">
+                    <div class="separationLine-LeftLine"> </div>
+                    <img src="img/symbol2.png">
+                    <div class="separationLine-RightLine"> </div>
+                </div>
+
+                <ol class="list_Publications">
+
+                    <li>
+                        <span class="myName">Alex Y. Song</span>, Peter B. Catrysse, and Shanhui Fan
+                        <span class="publicationTitle">"Broadband Control of Topological Nodes in Electromagnetic Fields"</span>, 
+                        <span class="conferenceName">CLEO: Science and Innovations</span>, 
+                        FTu3E.7, 2018
+                    </li>
+                    
+                    <li><span class="myName">Yu Song</span>, Rajaram Bhat, Andrew Allerman, Tzu-Yung Huang, Chung-En Zah, and Claire Gmachl, <span class="publicationTitle">"Light Emission from III-Nitride Quantum Cascade Structures Designed with Effective Interface Grading"</span>, <span class="conferenceName">SPIE Photonics West</span>, 2015</li>
+                    <li><span class="myName">Yu Song</span>, Rajaram Bhat, Andrew Allerman, Tzu-Yung Huang, Chung-En Zah, and Claire Gmachl, <span class="publicationTitle">"Intersubband Electroluminescence in GaN/Al\(_x\)Ga\(_{1-x}\)N Quantum Cascade Emitter Structure"</span>, <span class="conferenceName">International Quantum Cascade Lasers School & Workshop</span>, 2014</li>
+                    <li><span class="myName">Yu Song</span>, Rajaram Bhat, Andrew Allerman, Tzu-Yung Huang, Pranav Badami, Chung-En Zah, and Claire Gmachl, <span class="publicationTitle">"Mid-Infrared GaN/Al\(_x\)Ga\(_{1-x}\)N Quantum Cascade Detectors Grown by MOCVD"</span>, <span class="conferenceName">CLEO: Science and Innovations</span>, STh4I.2, 2014</li>
+                    <li><span class="myName">Yu Song</span>, Rajaram Bhat, Pierre Bouzi, Chung-En Zah and Claire Gmachl, <span class="publicationTitle">"Effect of Quasi Two Dimensional Interface Roughness in Ultra-Thin Semiconductor Quantum Wells"</span>, <span class="conferenceName">APS March Meeting</span>, 2014</li>
+                    <li><span class="myName">Yu Song</span>, Rajaram Bhat, Chung-En Zah, Pranav Badami, Tzu-Yung Huang, and Claire Gmachl, <span class="publicationTitle">"Mid-Infrared GaN/Al\(_x\)Ga\(_{1-x}\)N Quantum Cascade Structures Grown by MOCVD"</span>, <span class="conferenceName">The 12th International Conference on  Intersubband Transitions in Quantum Wells</span>, 2013</li>
+                    <li><span class="myName">Yu Song</span>, Sergey B. Mirov, Claire F. Gmachl, and Jacob B. Khurgin, <span class="publicationTitle">"Photoluminescence Characteristics of Fe\(^{2+}\):ZnSe Crystals with Quantum Cascade Laser Pumping"</span>, <span class="conferenceName">CLEO: Science and Innovations</span>, CF1I.1, 2013</li>
+                    <li><span class="myName">Yu Song</span>, Rajaram Bhat, Chung-En Zah, and Claire Gmachl, <span class="publicationTitle">"Intersubband Absorption and Electron Transport Study in MOCVD Grown GaN / AlN and GaN / Al\(_{0.6}\)Ga\(_{0.4}\)N Superlattices"</span>, <span class="conferenceName">International Quantum Cascade Lasers School & Workshop</span>, 2012</li>
+                    <li><span class="myName">Yu Song</span>, Sergey B. Mirov, Claire F. Gmachl, and Jacob B. Khurgin, <span class="publicationTitle">"Photoluminescence in a Fe\(^{2+}\):ZnSe Crystal Using Near Absorption Edge Quantum Cascade Laser Pumping"</span>, <span class="conferenceName">CLEO: Science and Innovations</span>, CTu2D.3, 2012</li>
+                    <li><span class="myName">Yu Song</span>, Yamac Dikmelik, Claire F Gmachl, and Jacob B Khurgin, <span class="publicationTitle">"Modeling the Transport and Lasing Characteristics of Quantum Cascade Lasers"</span>, <span class="conferenceName">Quantum Electronics and Laser Science Conference (QELS)</span>, JW2A.93, 2012</li>
+                    <li><span class="myName">Yu Song</span>, Yamac Dikmelik, Jacob Khurgin, <span class="publicationTitle">"Practical Model for the Transport and Lasing Characteristics of Quantum Cascade Lasers"</span>, <span class="conferenceName">The 11th International Conference on  Intersubband Transitions in Quantum Wells</span>, 2011</li>
+                    <li><span class="myName">Yu Song</span>, Jacob B Khurgin, Yamac Dikmelik, <span class="publicationTitle">"A Practical Transport and Lasing Model for Quantum Cascade Lasers"</span>, <span class="conferenceName">SPIE Photonics West</span>, 2011</li>
+                    <li>(Selected from <span class="conferenceName">MIRTHE Summer Workshops</span>) <span class="myName">Yu Song</span>, Matthew Escarra, Colin Montemarano, William Charles, Claire Gmachl, <span class="publicationTitle">"Active Metamaterials with Current Injection to Compensate Losses"</span>, <span class="conferenceName">MIRTHE Summer Workshop</span>, 2010</li>
+                    <li><span class="myName">Yu Song</span>, Bing Xiong, Changzhen Sun, Yi Luo, <span class="publicationTitle">"Low residual stress and high repeatability of SiNx thin films for InP-based optoelectronic device fabrication by dual radio frequency plasma enhanced chemical vapor deposition"</span>, <span class="conferenceName">IEEE 19th International Conference on Indium Phosphide and Related Materials</span>, pp. 233, 2007</li>
+                    <li>Jin Huang, Changzheng Sun, Bing Xiong, <span class="myName">Yu Song</span>, Yi Luo, <span class="publicationTitle">"Phase Noise Characteristics of Optically Generated Microwave by Sideband Injection Locking"</span>, <span class="conferenceName">International Nano-Optoelectronic Workshop</span>, pp. 301, 2008</li>
+                </ol>
+
+                <div class="footnote"> <sup>&dagger;</sup> These authors contributed equally.</div>
+            </div>
+        </div>
+
+        <div class="contentTabs" id="tab-education">
+            <div class="container-fluid">
+                <div id="education-professional-preparation">
+                    <h2 style="text-align:center">Professional Preparation</h2>
+                    <div class="separationLine">
+                        <div class="separationLine-LeftLine"> </div>
+                        <img src="img/symbol4.png">
+                        <div class="separationLine-RightLine"> </div>
+                    </div>
+                    <div>
+                        <p class="occupation">   Postdoc </p> <p class="university"> Electrical Engineering, Stanford University </p><p class="year">2015 ~ now</p>
+                    </div>
+                    <div>
+                        <p class="occupation">  Postdoc </p> <p class="university">Electrical Engineering, Princeton University</p><p class="year">2014 ~ 2015</p>
+                    </div>
+                    <div>
+                        <p class="occupation">  Ph.D. </p> <p class="university">Electrical Engineering, Princeton University</p> <p class="year"> 2014</p>
+                    </div>
+                    <div>
+                        <p class="occupation">  &nbsp </p> <p class="university" style="font-size:1.35em"> Minor 1: Applied Mathematics, Minor 2: Physics </p> <p class="year"> &nbsp </p>
+                    </div>
+                    <div>
+                        <p class="occupation">  M.S. </p> <p class="university">Electronic Engineering, Tsinghua University</p><p class="year">2009</p>
+                    </div>
+                    <div>
+                        <p class="occupation">  B.S. (with Honor)</p> <p class="university">Mathematics and Physics, Tsinghua University </p><p class="year">2006</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contentTabs" id="tab-services">
+            <div class="container-fluid">
+                <div id="tab-services-services">
+                    <h2 style="text-align:center">Services & Other Activities</h2>
+                    <div class="separationLine">
+                        <div class="separationLine-LeftLine"> </div>
+                        <img src="img/symbol3.png">
+                        <div class="separationLine-RightLine"> </div>
+                    </div>
+                    <ul id="tab-services-services-list">
+                        <li>Teaching assistant, ELE-208, “Electronic and Photonic Devices”, 2014 spring & 2013 spring</li>
+                        <li>Teaching assistant, IC & Optics Fabrication Course, ELE, 2013 fall</li>
+                        <li>Mentor to more than ten undergraduate students in their summer research programs, independent works and/or junior and senior theses at Princeton University</li>
+                        <li>I am a reviewer for American Physical Society (APS), American Institute of Physics (AIP), Optical Society of America (OSA) and Institute of Electrical and Electronics Engineers (IEEE)</li>
+                        <li>I've volunteered in various programs for introducing science and engineering to pre-college students and the general public (YSAP, annual Science and Engineering Expo, engineering school / ELE departmental open houses, MIRTHE exhibition at various conferences and events, etc.) I enjoy teaching science to the next generation!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentTabs" id="tab-links">
+            <div class="container-fluid">
+                <div id="tab-links-links">
+                    <h2 style="text-align:center">Links</h2>
+                    <div class="separationLine">
+                        <div class="separationLine-LeftLine"> </div>
+                        <img src="img/symbol3.png">
+                        <div class="separationLine-RightLine"> </div>
+                    </div>
+                    <ul id="tab-links-list">
+                        <li><a href="http://web.stanford.edu/group/fan/">Prof. Shanhui Fan's group page.</a></li>
+
+                        <li><a href="http://qcllab.princeton.edu/">Prof. Claire F. Gmachl's group page.</a></li>
+
+                        <li><a href="http://www.mirthe-erc.org/mirthecenter/">MIRTHE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- need this spacer to hold space between tab switches, so the navbar doesn't get unaffixed then affixed. -->
+        <div id="spacer-temp">
+        </div>
+
+        <footer class="footer"> <!-- 这里其实div也可。-->
+            <div class="footer-line"></div>
+            <div class="footer-text">
+                © Alex Y. Song, 2016.
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
