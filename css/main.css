@@ -448,6 +448,24 @@ body {
 
 
 
+#tab-software {
+	/* display:none; */
+	/* margin-top: 30px; */
+	margin-left: 15%;
+	margin-right: 15%;
+	font-family: Garamond, "Baskerville", "Times New Roman", Times, Serif;
+	text-align: justify;
+}
+#tab-software-software h2{
+    font-size: 2.4em;
+}
+#tab-software li {
+	font-size: 2em;
+	margin-bottom: .8em;
+}
+
+
+
 #tab-education {
 	/* display:none; */
 	/* height:100%;*/ /* need this so that bio-text is centered on page. this was before the banner was added. */

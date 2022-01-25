@@ -30,6 +30,7 @@ $(document).ready( function() {
     // Need these variables, because later need to compare things like handle_tab_shown == handle_tab_bio etc. ()而in js，两次generate jquery object $("#tab-bio") == $("#tab-bio")得到是false。)
     var handle_tab_bio = $("#tab-bio");
     var handle_tab_publications = $("#tab-publications");
+    var handle_tab_software = $("#tab-software");
     var handle_tab_education = $("#tab-education");
     var handle_tab_services = $("#tab-services");
     var handle_tab_links  = $("#tab-links");
@@ -37,6 +38,7 @@ $(document).ready( function() {
     var handle_tab_shown = handle_tab_bio;
     // handle_tab_bio.hide();
     handle_tab_publications.hide();
+    handle_tab_software.hide();
     handle_tab_education.hide();
     handle_tab_services.hide();
     handle_tab_links.hide();
@@ -85,6 +87,12 @@ $(document).ready( function() {
                 handle_tab_shown = handle_tab_publications;
                 $(".navbar-nav li a").removeClass('selected');
                 $("#navbar-nav-publications").addClass('selected');
+                break;
+                case 'software':
+                changeTab(handle_tab_software, handle_tab_shown, navbar_collapsed_height);
+                handle_tab_shown = handle_tab_software;
+                $(".navbar-nav li a").removeClass('selected');
+                $("#navbar-nav-software").addClass('selected');
                 break;
                 case 'education':
                 changeTab(handle_tab_education, handle_tab_shown, navbar_collapsed_height);
@@ -153,6 +161,16 @@ $(document).ready( function() {
         history.pushState({tab_now: 'publications'}, "title", "?tab_now=publications");
         changeSubTab($("#tab-publications-conferences"), handle_tab_publications, handle_tab_shown, navbar_collapsed_height);
         handle_tab_shown = handle_tab_publications;
+        $("#myNavbar").collapse('hide');
+    });
+
+    $("#navbar-nav-software").click(function(e){
+        e.preventDefault();
+        $(".navbar-nav li a").removeClass('selected');
+        $(this).addClass('selected');
+        history.pushState({tab_now: 'software'}, "title", "?tab_now=software");
+        changeTab(handle_tab_software, handle_tab_shown, navbar_collapsed_height);
+        handle_tab_shown = handle_tab_software;
         $("#myNavbar").collapse('hide');
     });
 
