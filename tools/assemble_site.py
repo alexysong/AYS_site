@@ -68,6 +68,13 @@ OUTPUT_FILE = PROJECT_ROOT / "index.html"
 INCLUDE_PATTERN = re.compile(r"<!--\s*INCLUDE\s+(.+?)\s*-->")
 
 
+GENERATED_FILE_NOTICE = """<!--
+Generated file. Do not edit directly.
+Edit index.template.html and run: python tools/build_all.py
+-->
+"""
+
+
 def read_text(path: Path) -> str:
     """
     Read a UTF-8 text file.
@@ -112,6 +119,8 @@ def main() -> None:
     html = read_text(TEMPLATE_FILE)
 
     html = INCLUDE_PATTERN.sub(replace_include, html)
+
+    html = GENERATED_FILE_NOTICE + html
 
     OUTPUT_FILE.write_text(html, encoding="utf-8")
 
