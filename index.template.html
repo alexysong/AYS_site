@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Group website of Dr. Alex Y. Song's (a.k.a. Yu Song) research lab.">
+    <meta name="author" content="Dr. Alex Y. Song, 2016">
+
+    <title>Alex Y. Song, Ph.D.</title>
+
+    <!-- Bootstrap latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>	 -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+
+    <!-- Bootstrap latest compiled and minified JavaScript. Must put after jQuery script -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- jQuery UI -->
+    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- Mathjax -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">  </script>
+    <!-- <script type="text/javascript" async src="MathJax/MathJax.js?config=TeX-MML-AM_CHTML">  </script> -->
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+    <div id="banner" class="container-fluid" >
+        <!-- <img src="img/SU_Seal_Red_hollow.svg"> -->
+        <h1><a href="https://alexsong.group/" style="color:#000;text-decoration:none;text-shadow: 0em 0em 0.3em #fff">Alex Y. Song, Ph.D.</a></h1>
+        <h3>Senior Lecturer, University of Sydney</h3>
+        <p> School of Electrical and Information Engineering </p>
+        <p> 
+            <a href="https://scholar.google.com/citations?user=0QrF_VsAAAAJ" style="font-style: normal; color: rgb(19, 44, 135)">
+                google scholar
+            </a>
+            &nbsp | &nbsp
+            <span style="font-style: italic; color: rgb(19, 44, 135)"> 
+                alex.song a.t. sydney.edu.au 
+            </span>
+
+        </p>
+    </div>
+
+    <nav class="navbar navbar-default" id="theNavbar"> <!-- data-spy="affix" data-offset-top="150" --> <!-- navbar-fixed-top -->
+        <!-- <div class="container-fluid" id="theNavbarContainerFluid"> -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Song Group</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" id="myNavbar-nav"> <!-- navbar-right" -->
+                    <li class="navbar-nav-spacer"></li>
+                    <li class="true-nav-li"><a id="navbar-nav-bio" href="#tab-bio">Home</a></li>
+                    <li class="navbar-nav-spacer"></li>
+                    <li  class="true-nav-li"><a id="navbar-nav-publications"href="#tab-publications">Publications</a></li>
+                    <li  class="true-nav-li">
+                        <!-- <div class="dropdown"> -->
+                            <a id="navbar-nav-publications-caret" class="dropdown-toggle" data-target="#dropdown-menu"  data-toggle="dropdown" href="#" style="margin-left: 0em; padding-left:0.5em"> <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a id="navbar-nav-journal" href="#tab-publications-journals" >Journal</a></li>
+                                <li><a id="navbar-nav-conference" href="#tab-publications-conferences">Conference</a></li>
+                            </ul>
+                        <!-- </div> -->
+                    </li>
+                    <li class="navbar-nav-spacer"></li>
+                    <li class="true-nav-li"><a id="navbar-nav-software" href="#tab-software">Software</a></li>
+                    <li class="navbar-nav-spacer"></li>
+                    <li  class="true-nav-li"><a id="navbar-nav-education" href="#tab-education">Education</a></li>
+                    <li class="navbar-nav-spacer"></li>
+                    <li  class="true-nav-li"><a id="navbar-nav-services" href="#tab-services">Services</a></li>
+                    <li class="navbar-nav-spacer"></li>
+                    <li class="true-nav-li"><a id="navbar-nav-links" href="#tab-links">Links</a></li>
+                    <li class="navbar-nav-spacer"></li>
+                    <!-- <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li> -->
+                </ul>
+            </div>
+        <!-- </div> -->
+    </nav>
+
+    <!-- need a content wrapper, 为了让navbar+tab content至少 fill up 一个屏幕。 这样切换tab 的时候就不会被迫 scroll up page, 至少让navbar处于affix的状态。 -->
+    <div class="content-wrapper">
+
+        <div id="pageTopPadding">
+        </div>
+
+        <div class="contentTabs" id="tab-bio">
+            <div class="container-fluid">
+
+                <div id="bio-bio">
+                    <h2 style="text-align:center">About Us</h2>
+                    <div class="separationLine">
+                        <div class="separationLine-LeftLine"> </div>
+                        <img src="img/symbol3.png">
+                        <div class="separationLine-RightLine"> </div>
+                    </div>
+                    <p>
+                        &nbsp &nbsp
+                        Welcome to the Song Group website (currently under construction). 
+                        We are interested in nanophotonics, passive-cooling, topological materials, metamaterials, and quantum photonics. 
+                        We engage in both theoretical and experimental studies.
+                        Our research finds applications in sustainable energy, information processing, directed energy, and integrated devices. 
+                    </p>
+                    <p>    
+                        &nbsp &nbsp
+                        Dr. Song joined the University of Sydney in 2021 as a senior lecturer. 
+                        Before, he was a postdoctoral fellow working with <a href="http://web.stanford.edu/group/fan/">Prof. Shanhui Fan</a> at Stanford University, where he focused on nanophotonics, topological materials, thermal photonics, and renewable energy.
+                        He developed the passive cooling textiles together with his collaborators. 
+                        He also discovered several new effects in fundamental photonics such as the topological edge-gain effect and $\mathcal{PT}$-symmetric optical non-reciprocity. 
+
+                        <!-- My main research interest is in photonics, where I engage in both theorerical and experimental studies of novel photonic effects that are applicable in integrated devices, sustainable energy, information processing, etc.
+                        Some recent topics include topogocial photonics, non-Hermitian physics, quantum states of light, and thermal photonics. -->
+                        <!-- Please check my <a href="#tab-publications">publications</a> page for recent updates. -->
+
+                        <!-- &nbsp &nbsp -->
+                        His thesis work was carried out in <a href="http://qcllab.princeton.edu/">Prof. Claire Gmachl's group</a> at Princeton University.
+                        There, he theoretically studied semiconductor quantum structures using techniques such as the non-equilibrium Green's functions. Experimentally, he developed several novel quantum-cascade light sources and detectors.
+
+                        <!-- The experimental part of the work explores novel quantum cascade light sources and photodetectors, especially in the III-nitride material system. -->
+                        <!-- The theoretical part focuses on the transport and optical properties of semiconductor quantum structures, using techniques such as the non-equilibrium Green's functions. -->
+
+                        <!-- My experimental work focused on novel quantum cascade light sources and photodetectors, especially in III-nitride material system. On the theoretical side, I have studied intersubband quantum structures using non-equilibrium Green's functions and other theoretical techniques.
+                        My theoretical work focused on the theory of intersubband transitions using non-equilibrium Green's functions.
+                        I also studied intersubband quantum structures theoretically using non-equilibrium Green's functions.
+                        concentrate
+                        mainly concerns with
+                        studies the transport and optical properties of intersubband quantum structures using the non-equilibrium Green's functions formalism. -->
+                    </p>
+
+                    <p>
+                        &nbsp &nbsp
+                        <strong>Openings</strong>: <br> 
+                        &nbsp &nbsp 
+                        We have one open Ph.D. position in theoretical nanophotonics. If you are interested, please feel free to contact us at alex.song (at) sydney.edu.au.
+                    </p>
+                    <div id="photo" style="text-align:center">
+                        <img style="width: 100%; max-width: 350px; height: auto;" src="img/00290026-2e.jpg" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentTabs" id="tab-publications">
+            <div class="container-fluid">
+
+                <h3 class="tab-publications-title" id="tab-publications-journals">Journal Publications</h3>
+
+                <div class="separationLine">
+                    <div class="separationLine-LeftLine"> </div>
+                    <img src="img/symbol1.png">
+                    <div class="separationLine-RightLine"> </div>
+                </div>
+
+                <!-- 打开cv，把publication拷贝到npp，然后搜索\r\n，换成</li>\r\n<li>，搜索名字、paper title前后的分号，替换上span之类。 -->
+                <ol class="list_Publications">
+                    <!-- INCLUDE generated/journals.html -->
+                </ol>
+
+                <div class="footnote"> <sup>&dagger;</sup> These authors contributed equally.</div>
+
+                <div style="height:7em;"></div>
+
+                <h3 class="tab-publications-title" id="tab-publications-conferences">Conference Presentations</h3>
+
+                <div class="separationLine">
+                    <div class="separationLine-LeftLine"> </div>
+                    <img src="img/symbol2.png">
+                    <div class="separationLine-RightLine"> </div>
+                </div>
+
+                <ol class="list_Publications">
+                    <!-- INCLUDE generated/conferences.html -->
+                </ol>
+
+                <div style="height:7em;"></div>
+
+                <h3 class="tab-publications-title" id="tab-publications-patents">Patents</h3>
+
+                <div class="separationLine">
+                    <div class="separationLine-LeftLine"> </div>
+                    <img src="img/symbol2.png">
+                    <div class="separationLine-RightLine"> </div>
+                </div>
+
+                <ol class="list_Publications">
+                    <!-- INCLUDE generated/patents.html -->
+                </ol>
+
+                <!-- <div class="footnote"> <sup>&dagger;</sup> These authors contributed equally.</div> -->
+            </div>
+        </div>
+
+
+        <div class="contentTabs" id="tab-software">
+            <div class="container-fluid">
+                <div id="tab-software-software">
+                    <h2 style="text-align:center">Software</h2>
+                    <div class="separationLine">
+                        <div class="separationLine-LeftLine"> </div>
+                        <img src="img/symbol3.png">
+                        <div class="separationLine-RightLine"> </div>
+                    </div>
+                    <ul id="tab-software-list">
+
+                        <li><a href="https://github.com/alexysong/inkstone">Inkstone</a> 
+                            <div>Efficient solver based on rigorous coupled-wave analysis to simulate electromagnetic responses of 3D and 2D multi-layered structures with in-plane periodicity, such as gratings, photonic-crystal slabs, metasurfaces, surface-emitting lasers, nano-antennas, and more.</div>
+                        </li>
+                        <li><a href="https://github.com/alexysong/tdyno">T-Dyno</a> 
+                            <div> A finite-difference time-domain (FDTD) package equipped with dynamic modulations in the refractive index and gain/loss.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contentTabs" id="tab-education">
+            <div class="container-fluid">
+                <div id="education-professional-preparation">
+                    <h2 style="text-align:center">Professional Preparation</h2>
+                    <div class="separationLine">
+                        <div class="separationLine-LeftLine"> </div>
+                        <img src="img/symbol4.png">
+                        <div class="separationLine-RightLine"> </div>
+                    </div>
+                    <div>
+                        <p class="occupation">   Postdoc </p> <p class="university"> Electrical Engineering, Stanford University </p><p class="year">2015 ~ now</p>
+                    </div>
+                    <div>
+                        <p class="occupation">  Postdoc </p> <p class="university">Electrical Engineering, Princeton University</p><p class="year">2014 ~ 2015</p>
+                    </div>
+                    <div>
+                        <p class="occupation">  Ph.D. </p> <p class="university">Electrical Engineering, Princeton University</p> <p class="year"> 2014</p>
+                    </div>
+                    <div>
+                        <p class="occupation">  &nbsp </p> <p class="university" style="font-size:1.35em"> Minor 1: Applied Mathematics, Minor 2: Physics </p> <p class="year"> &nbsp </p>
+                    </div>
+                    <div>
+                        <p class="occupation">  M.S. </p> <p class="university">Electronic Engineering, Tsinghua University</p><p class="year">2009</p>
+                    </div>
+                    <div>
+                        <p class="occupation">  B.S. (with Honor)</p> <p class="university">Mathematics and Physics, Tsinghua University </p><p class="year">2006</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contentTabs" id="tab-services">
+            <div class="container-fluid">
+                <div id="tab-services-services">
+                    <h2 style="text-align:center">Services & Other Activities</h2>
+                    <div class="separationLine">
+                        <div class="separationLine-LeftLine"> </div>
+                        <img src="img/symbol3.png">
+                        <div class="separationLine-RightLine"> </div>
+                    </div>
+                    <ul id="tab-services-services-list">
+                        <li>Teaching assistant, ELE-208, “Electronic and Photonic Devices”, 2014 spring & 2013 spring</li>
+                        <li>Teaching assistant, IC & Optics Fabrication Course, ELE, 2013 fall</li>
+                        <li>Mentor to more than ten undergraduate students in their summer research programs, independent works and/or junior and senior theses at Princeton University</li>
+                        <li>I am a reviewer for American Physical Society (APS), American Institute of Physics (AIP), Optical Society of America (OSA) and Institute of Electrical and Electronics Engineers (IEEE)</li>
+                        <li>I've volunteered in various programs for introducing science and engineering to pre-college students and the general public (YSAP, annual Science and Engineering Expo, engineering school / ELE departmental open houses, MIRTHE exhibition at various conferences and events, etc.) I enjoy teaching science to the next generation!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentTabs" id="tab-links">
+            <div class="container-fluid">
+                <div id="tab-links-links">
+                    <h2 style="text-align:center">Links</h2>
+                    <div class="separationLine">
+                        <div class="separationLine-LeftLine"> </div>
+                        <img src="img/symbol3.png">
+                        <div class="separationLine-RightLine"> </div>
+                    </div>
+                    <ul id="tab-links-list">
+
+                        <li><a href="https://www.sydney.edu.au/nano/our-research/networks/smart-sustainable-network.html">Smart Sustainable Building Network</a></li>
+
+                        <li><a href="http://web.stanford.edu/group/fan/">Prof. Shanhui Fan's group page.</a></li>
+
+                        <li><a href="http://qcllab.princeton.edu/">Prof. Claire F. Gmachl's group page.</a></li>
+
+                        <li><a href="http://www.mirthe-erc.org/mirthecenter/">MIRTHE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- need this spacer to hold space between tab switches, so the navbar doesn't get unaffixed then affixed. -->
+        <div id="spacer-temp">
+        </div>
+
+        <footer class="footer"> <!-- 这里其实div也可。-->
+            <div class="footer-line"></div>
+            <div class="footer-text">
+                © Alex Y. Song, 2021.
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

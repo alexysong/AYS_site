@@ -1,0 +1,97 @@
+defaults:
+  pdf_icon: img/book_AYS-02.png
+
+# Website-only exclusion. These entries are in the shared BibTeX file,
+# but are not part of the current Journal/Conference publication list.
+Patent_2019_outdoor_cooling:
+  include: true
+Patent_2019_NanoPE:
+  include: true
+Patent_2019_cooling_woven:
+  include: true
+
+Optica2021_Arbi_vortices:
+  pdf: publications/2021_optica_vortices_8-7-966.pdf
+
+Song_APL2021_Controllable_Dirac_Q_peak:
+  pdf: publications/2021_APL_single_freq_single_color_5.0056243.pdf
+  note_display: "Editor's Pick"
+
+PRL2020_PT_Topology:
+  pdf: publications/PhysRevLett.125.033603.pdf
+  html_title: "\\(\\mathcal{PT}\\)-symmetric topological edge-gain effect"
+
+ProcIEEE2020_IanWilliamson_nonreci_modulate_review:
+  pdf: publications/IEEEProc09207994.pdf
+
+Minkov2020:
+  pdf: publications/acsphotonics.0c00327.pdf
+
+Song_PRL2020_TR_nonreci:
+  pdf: publications/PhysRevLett.124.257403.pdf
+
+NatCommun2020_Siddharth_no_unidirec:
+  pdf: publications/2020_NatComm_s41467-020-14504-9.pdf
+
+Song_PRA2019_PT_nonreci:
+  pdf: publications/PhysRevA.99.013824.pdf
+
+Song_APL2018_First_Prin_RCWA_PCSEL:
+  pdf: publications/2018_APL_1.5045486.pdf
+
+Song_AM2018_ZnO_PE:
+  pdf: publications/2018_Advanced_Materials.pdf
+  dagger:
+    - Lili Cai
+    - Alex Y. Song
+
+PRL2018_broadband_node:
+  pdf: publications/2018_PhysRevLett.120.193903.pdf
+
+NatSus2018_NanoPE_Fibre:
+  pdf: "publications/2018_Nature Sustainability_Cui_AR_1519752128_1.pdf"
+  dagger:
+    - Yucan Peng
+    - Jun Chen
+    - Alex Y. Song
+    - Peter B. Catrysse
+
+SciAdv2017_DualFunction:
+  pdf: publications/2017_ScienceAdvances_e1700895.full.pdf
+
+Song_NatCommun2017_warming_up:
+  pdf: publications/2017_Nat.Comm.8.496.pdf
+
+PRB2016_3D_Roughness:
+  pdf: publications/PhysRevB2016.94.165307.pdf
+
+Science2016_Radi_cooling_textile:
+  pdf: publications/Science2016_1019.full.pdf
+
+ACSPhoto2016_Catrysse_textile_design:
+  pdf: publications/acsphotonics2016.E6b00644.pdf
+
+APL2015_QC_emission:
+  pdf: publications/APL2015_1.4932068.pdf
+
+APL2015_OmriWolf_EnhanceNonlinear:
+  pdf: publications/APL2015_1.4933332.pdf
+
+APL2014_QCDetector_MOCVD:
+  pdf: publications/APL2014_1.4901220.pdf
+
+Song_APL2014_FeZnSe:
+  pdf: publications/APL2014_1.4897546.pdf
+  html_title: "Mid-infrared light emission from a Fe\\(^{2+}\\):ZnSe polycrystal using quantum cascade laser pumping"
+
+JAP2014_PierreBouzi_growth_direction:
+  pdf: publications/APL2014_1.4890311.pdf
+
+ACSNano2014_ChaoWang_plasm_anten:
+  pdf: publications/ACSNano2014_nn406281u.pdf
+
+APL2008_Song_splitting:
+  pdf: publications/APL2008_1.3007985.pdf
+
+CPL2008_JinHuang_phase_noise:
+  pdf: publications/CPL2008_Huang_Jin_2008_Chinese_Phys._Lett._25_039.pdf
